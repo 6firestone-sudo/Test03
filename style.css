@@ -212,32 +212,54 @@ nav ul li {
     background-color: #e60000;
 }
 
+/* --- style.css (New or modified additions) --- */
+
 .welcome-container {
     text-align: center;
     padding: 30px 0;
 }
 
+/* NEW: Two-column grid for welcome content */
+.welcome-content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Description wider than info boxes */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left; /* Reset text alignment for content */
+    align-items: start;
+}
+
+.welcome-description p {
+    margin-bottom: 1em;
+}
+
+/* Modify existing info-boxes styles to fit the grid column */
 .info-boxes {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin-top: 20px;
+    flex-direction: column; /* Stack the info boxes vertically */
+    gap: 15px;
+    margin-top: 0; /* Remove top margin as it's handled by the grid gap */
 }
 
-.info-box {
-    flex: 1;
-    background-color: var(--text-light);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-top: 3px solid var(--accent-color);
+/* Media Query for Responsiveness (Existing code update) */
+@media (max-width: 768px) {
+    /* Stack the content sections vertically on small screens */
+    .welcome-content-grid {
+        grid-template-columns: 1fr;
+    }
+    .info-boxes {
+        flex-direction: row; /* Keep info boxes side-by-side or wrap if needed */
+        justify-content: space-around;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .info-box {
+        flex: 1; /* Make boxes take equal space */
+    }
 }
 
-.info-box h3 {
-    color: var(--primary-color);
-    font-size: 1.1em;
-    margin-bottom: 5px;
-}
+
 
 /* Products Section */
 .products-grid {
@@ -694,4 +716,5 @@ footer {
 .footer-right a , 
 .whatsapp-link  {
     display: none;
+
 }
