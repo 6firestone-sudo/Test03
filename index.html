@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMV World – Global Export Solutions</title>
+    <meta name="description" content="HMV World exports premium Indian products worldwide. Trusted exporter from India, certified with APEDA, DGFT, MSME, and GST.">
+
+    <meta name="keywords" content="HMV World, Global Export, Indian Exporter, Spices, Incense Sticks, Imitation Jewelry, APEDA, DGFT, MSME, Pune Exporter">
+    <meta name="author" content="HMV WORLD">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://6firestone-sudo.github.io/Test-01/">
+    <meta property="og:title" content="HMV World – Global Export Solutions">
+    <meta property="og:description" content="HMV World exports premium Indian products worldwide. Trusted exporter from India, certified with APEDA, DGFT, MSME, and GST.">
+    <meta property="og:image" content="https://6firestone-sudo.github.io/Test-01/assets/logo/logo_name.jpg">
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon2.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Initialize EmailJS with your Public Key
+        (function() {
+            emailjs.init("0CV0N42qYc1Rp59R8"); // REPLACE with your actual EmailJS Public Key
+        })();
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="#hero" class="logo-link">
+                <img src="assets/logo/logo.png" alt="HMV WORLD Logo" class="logo-square">
+                <div class="logo-text">
+                    <h1>HMV WORLD</h1>
+                    <p class="tagline">Global Export Solutions</p>
+                </div>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero" class="nav-item">HOME</a></li>
+                <li><a href="#products" class="nav-item">PRODUCTS</a></li>
+                <li><a href="#quotation" class="nav-item">QUOTATION</a></li>
+                <li><a href="#about" class="nav-item">ABOUT US</a></li>
+                <li><a href="#contact" class="nav-item">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="page-section">
+            <div class="slider-container">
+                <div class="slider" id="hero-slider">
+                    </div>
+                <button class="quote-button" onclick="document.getElementById('quotation').scrollIntoView({ behavior: 'smooth' });">
+                    Get Quotation
+                </button>
+            </div>
+            
+            <div class="welcome-container">
+                <h2>Welcome to our website</h2>
+                <div class="info-boxes">
+                    <div class="info-box">
+                        <h3>Nature of Business:</h3>
+                        <p>Exporter</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Year of Establishment:</h3>
+                        <p>2025</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Market Covered:</h3>
+                        <p>Global</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="page-section">
+            <h2>Our Products</h2>
+            <div id="products-container" class="products-grid">
+                </div>
+        </section>
+
+        <section id="quotation" class="page-section form-section">
+            <h2>Request a Quotation</h2>
+            <form id="quotation-form">
+                <div class="form-row">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name *" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name *" required>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" id="company" name="company" placeholder="Company Name">
+                    <input type="url" id="website" name="website" placeholder="Website (Optional)">
+                </div>
+
+                <div class="form-row">
+                    <div class="contact-group">
+                        <select id="countryCode" name="countryCode" required>
+                            </select>
+                        <input type="tel" id="contactNum" name="contactNum" placeholder="Contact Number *" required>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Email ID *" required>
+                </div>
+
+                <div class="form-row">
+                    <select id="productName" name="productName" required>
+                        <option value="" disabled selected>Select Product Name *</option>
+                        </select>
+                    <input type="text" id="hsCode" name="hsCode" placeholder="HS Code (Auto-filled)" readonly>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" id="hsName" name="hsName" placeholder="HS Name (Auto-filled)" readonly>
+                    <textarea id="description" name="description" placeholder="Product Description (Auto-filled)" readonly></textarea>
+                </div>
+
+                <div class="form-row full-width">
+                    <textarea id="requirement" name="requirement" placeholder="Exact Requirement (max 200 letters) *" maxlength="200" required></textarea>
+                </div>
+                
+                <div class="form-checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#" id="terms-link">terms and conditions</a>.</label>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="theme-button">Send Quotation</button>
+                </div>
+            </form>
+            
+            <div id="terms-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h3>HMV WORLD - Terms and Conditions</h3>
+                    <p><strong>1. General:</strong> All quotations are non-binding until confirmed in writing by HMV WORLD. Prices are subject to change based on market fluctuations, raw material costs, and currency exchange rates.</p>
+                    <p><strong>2. Product Specifications:</strong> Product images and descriptions on the website are for illustrative purposes. Final products will conform to agreed-upon specifications and quality standards (e.g., APEDA guidelines for spices).</p>
+                    <p><strong>3. Payment Terms:</strong> Standard payment terms are 50% advance upon order confirmation and 50% against Bill of Lading (B/L) copy, unless otherwise agreed upon in the Proforma Invoice.</p>
+                    <p><strong>4. Shipping & Delivery:</strong> Delivery timelines are estimates and commence from the date of advance payment. HMV WORLD is not liable for delays caused by force majeure, customs, or third-party shipping agents. All shipments are Ex-Works (EXW) or Free On Board (FOB), as specified in the quote.</p>
+                    <p><strong>5. Export Compliance:</strong> The buyer is responsible for all import duties, taxes, and compliance with the destination country's regulations. HMV WORLD ensures compliance with Indian export regulations (DGFT, GST, MSME).</p>
+                    <p><strong>6. Warranty & Claims:</strong> Any quality or quantity discrepancies must be reported in writing within 7 days of receiving the goods. Liability is limited to the value of the goods provided.</p>
+                    <p><strong>7. Governing Law:</strong> These terms shall be governed by the laws of India, and any disputes shall be subject to the exclusive jurisdiction of the courts in Pune, Maharashtra.</p>
+                </div>
+            </div>
+
+            <div id="success-modal" class="modal">
+                <div class="modal-content thank-you-popup">
+                    <img src="assets/logo/logo_name.webp" alt="HMV WORLD Logo Name" class="popup-logo">
+                    <h3>Thank You for Your Quotation Request!</h3>
+                    <p>Your request has been successfully submitted. We will review it and get back to you shortly.</p>
+                    <p>For immediate assistance or quick follow-up, please connect with us directly on WhatsApp:</p>
+                    <a href="https://wa.me/message/KXKB46U5RZKCI1" target="_blank" class="whatsapp-link">
+                         Connect on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about" class="page-section">
+            <h2>About HMV WORLD</h2>
+            
+            <div class="story-values">
+                <h3>Our Story and Values</h3>
+                <p>HMV WORLD was founded in 2025 with a vision to connect the world with the finest Indian products. We are driven by a commitment to **Quality**, **Integrity**, and **Global Accessibility**. We ensure that every product exported meets stringent international standards, fostering trust with our global clientele.</p>
+            </div>
+
+            <div class="mission-vision-container">
+                <div class="mission">
+                    <h3>OUR MISSION</h3>
+                    <p>To be the most reliable and efficient global export solutions provider from India, expanding our product portfolio annually while adhering to the highest ethical and quality standards. We aim to support local producers and connect them to international markets.</p>
+                </div>
+                <div class="vision">
+                    <h3>OUR VISION</h3>
+                    <p>To establish HMV WORLD as a benchmark for excellence in the global export domain, recognized for exceptional customer service and a diverse range of premium Indian goods, making 'Made in India' a hallmark of quality worldwide.</p>
+                </div>
+            </div>
+
+            <div class="client-feedback">
+                <h3>What our clients say about us</h3>
+                <p><strong>Coming soon!</strong> (We are currently building a dynamic system to showcase authentic client feedback, ensuring transparency and trust.)</p>
+                </div>
+
+            <div class="partners-certifications">
+                <h3>Our Partners & Certifications</h3>
+                <p>We hold essential certifications for global trade, ensuring compliance and quality. Trusted by:</p>
+                <div class="partners-scroll-container">
+                    <div class="partners-scroll-track" id="partners-scroll">
+                        <img src="assets/partners/apeda.webp" alt="APEDA Certified" class="partner-logo">
+                        <img src="assets/partners/dgft-RBG.webp" alt="DGFT Certified" class="partner-logo">
+                        <img src="assets/partners/gst.webp" alt="GST Registered" class="partner-logo">
+                        <img src="assets/partners/msme-RBG.webp" alt="MSME Registered" class="partner-logo">
+                     </div>
+					 <div class="partners-scroll-track" id="partners-scroll">
+                        <img src="assets/partners/apeda.webp" alt="APEDA Certified" class="partner-logo">
+                        <img src="assets/partners/dgft-RBG.webp" alt="DGFT Certified" class="partner-logo">
+                        <img src="assets/partners/gst.webp" alt="GST Registered" class="partner-logo">
+                        <img src="assets/partners/msme-RBG.webp" alt="MSME Registered" class="partner-logo">
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="assets/icons/email.png" alt="Email Icon">
+                        <h4>Email ID:</h4>
+                        <p><a href="mailto:HMVworld@outlook.com">hmvworld@outlook.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="assets/icons/call.png" alt="Call Icon">
+                        <h4>Contact Number:</h4>
+                        <p><a href="tel:+918983544315">+91-8983544315</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="assets/icons/HQ.png" alt="Headquarter Icon">
+                        <h4>HEADQUARTER:</h4>
+                        <address>Nirmal Township, Kalepadal Road, Hadapsar, Pune, Maharashtra, India - 411028.</address>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3333333333335!2d73.91000000000001!3d18.510000000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1234567890f%3A0x1234567890abcdef!2sNirmal%20Township%2C%20Kalepadal%20Road%2C%20Hadapsar%2C%20Pune%20-%20411028!5e0!3m2!1sen!2sin!4v1638201600000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>Copyright © 2025 All Rights Reserved | **HMV WORLD** © 2025 | Global Export Solutions.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://facebook.com/temp-link" target="_blank" aria-label="Facebook"></a>
+            <a href="https://wa.me/message/KXKB46U5RZKCI1" target="_blank" aria-label="WhatsApp"></a>
+            <a href="https://linkedin.com/in/temp-link" target="_blank" aria-label="LinkedIn"></a>
+            <a href="https://instagram.com/temp-link" target="_blank" aria-label="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

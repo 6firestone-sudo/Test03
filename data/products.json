@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "id": "spices",
+      "name": "SPICES",
+      "icon": "assets/icon/spices.jpg",
+      "description": "Premium quality whole and ground spices, directly sourced from the finest farms in India. Guaranteed freshness and authentic flavor for global cuisine.",
+      "products": [
+        {"name": "Coriander Powder", "hs_code": "09092200", "hs_name": "Crushed/ground coriander seeds", "desc": "Fine quality ground coriander powder."},
+        {"name": "Cumin Powder", "hs_code": "09093200", "hs_name": "Crushed/ground cumin seeds", "desc": "Aromatic ground cumin for rich flavor."},
+        {"name": "Coriander and Cumin powder", "hs_code": "0909XX00", "hs_name": "Coriander and Cumin mixed powder", "desc": "Balanced blend of coriander and cumin."},
+        {"name": "Turmeric Powder", "hs_code": "09103020", "hs_name": "Turmeric, Curcuma, powder", "desc": "High curcumin turmeric powder."},
+        {"name": "Onion Powder", "hs_code": "07122000", "hs_name": "Onions, dried, in pieces or slices, but not further prepared", "desc": "Dehydrated and ground onion powder."},
+        {"name": "Garlic Powder", "hs_code": "07129010", "hs_name": "Garlic powder", "desc": "Fine granulated garlic powder."},
+        {"name": "Ginger Powder", "hs_code": "09101210", "hs_name": "Ginger, neither crushed nor ground", "desc": "Dried and ground ginger powder."}
+      ],
+      "images": ["assets/products/spices-1.jpg", "assets/products/spices-2.jpg", "assets/products/spices-3.jpg"]
+    },
+    {
+      "id": "incense",
+      "name": "INCENSE STICK",
+      "icon": "assets/icon/incense.jpg",
+      "description": "Hand-rolled aromatic incense sticks and dhoop, crafted for meditation, prayer, and relaxation. Available in various traditional fragrances.",
+      "products": [
+        {"name": "Incense Sticks", "hs_code": "33074100", "hs_name": "Agarbatti and other odoriferous preparations which operate by burning", "desc": "Traditional scented incense sticks."},
+        {"name": "Dhoop", "hs_code": "33074100", "hs_name": "Agarbatti and other odoriferous preparations which operate by burning", "desc": "Aromatic incense cones/dhoop."}
+      ],
+      "images": ["assets/products/dhoop.jpg", "assets/products/incense.jpg"]
+    },
+    {
+      "id": "jewelry",
+      "name": "IMITATION JEWELRY",
+      "icon": "assets/icon/jewelry.jpg",
+      "description": "Trendy and elegant imitation jewelry, including necklaces, earrings, bracelets, bangles, rings, and full sets. Perfect for all occasions.",
+      "products": [
+        {"name": "Necklaces", "hs_code": "71171990", "hs_name": "Imitation jewellery of base metal, plated with precious metal", "desc": "Statement and delicate necklaces."},
+        {"name": "Earrings", "hs_code": "71171990", "hs_name": "Imitation jewellery of base metal, plated with precious metal", "desc": "Hoops, studs, and dangle earrings."},
+        {"name": "Bracelets/Bangles", "hs_code": "71171990", "hs_name": "Imitation jewellery of base metal, plated with precious metal", "desc": "Variety of bracelets and bangles."},
+        {"name": "Rings and Sets", "hs_code": "71171990", "hs_name": "Imitation jewellery of base metal, plated with precious metal", "desc": "Fashionable rings and complete sets."}
+      ],
+      "images": ["assets/products/jewellery-1.jpg", "assets/products/jewellery-2.jpg", "assets/products/jewellery-3.jpg"]
+    }
+  ]
+}

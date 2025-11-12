@@ -1,0 +1,49 @@
+mvworld/
+├── assets/
+│   ├── favicon/
+│   │   └── favicon2.png
+│   ├── icon/
+│   │   ├── call.png
+│   │   ├── email.png
+│   │   ├── HQ.png
+│   │   ├── incense.jpg
+│   │   └── jewelry.jpg
+│   ├── logo/
+│   │   ├── logo.png
+│   │   └── logo_name.jpg
+│   ├── partners/
+│   │   ├── apeda.png
+│   │   ├── dgft-RBG.png
+│   │   ├── gst.png
+│   │   └── msme-RBG.png
+│   ├── products/
+│   │   ├── dhoop.jpg
+│   │   ├── jewellery-1.jpg
+│   │   ├── jewellery-2.jpg
+│   │   ├── jewellery-3.jpg
+│   │   ├── spices-1.jpg
+│   │   ├── spices-2.jpg
+│   │   └── spices-3.jpg
+│   └── slides/
+│       ├── slide01.jpg
+│       ├── slide02.jpg
+│       ├── slide03.jpg
+│       ├── slide04.jpg
+│       └── slide05.jpg
+├── data/
+│   └── products.json
+├── index.html
+├── style.css
+├── style.min.css  (Note: Minified version of style.css - content not provided here, link will be in HTML)
+└── script.js
+
+
+
+File Location,Suggested Size (Pixels),Format,Notes for Optimization
+assets/slides/slideXX.jpg,1920x1080 (or 16:9 aspect ratio),JPEG (High Quality),"Primary visual. Optimize with a compression tool (e.g., TinyPNG, Squoosh)."
+assets/logo/logo.png,100x100,PNG (Transparent),"Small, used in the header. Keep file size minimal."
+assets/logo/logo_name.jpg,400x150,JPEG or PNG,Used in the Thank You popup.
+assets/products/*.jpg,500x500 (Square),JPEG (Medium Quality),Used in product sliders. Ensure all are uniform for best slider appearance.
+assets/icon/*.png/jpg,60x60 to 100x100,PNG/JPEG (Small),"Call, Email, HQ icons, and small product icons."
+assets/partners/*.png,Max Height: 60px,PNG/SVG (Preferred),Logos for scrolling. Use grayscale/opacity for a professional look (handled in CSS).
+assets/favicon/favicon2.png,"32x32, 16x16, 48x48",PNG (or ICO),Must be correctly sized for browser tabs.
